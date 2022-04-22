@@ -9,42 +9,52 @@
 
 
 <body>
-    <h1>UserName And Password Inputs</h1>
-            <!-- Please Put Comments Here -->
-        <form action="/Edlawit">
-             <!-- This is the label and textbox for the username. Username has attributes and IDs -->
-            <p>
-                <label for="username">Enter A Name:</label>
-                <input id="username" type="text" placeholder="Edlawit" name="username">
+    <section>
+        <h1>UserName And Password Inputs</h1>
+                <!-- The form element represents a collection of form-associated elements. -->
+            <form action="/Monte">
+                <!-- This is the label and textbox for the username. Username has attributes and IDs -->
+                <p>
+                    <label for="username">Enter A Name:</label>
+                    <input id="username" type="text" placeholder="Edlawit" name="username">
+                </p>
+                <!-- This is the password label and textbox with attributes of a placeholder an ID and name. -->
+                <p>
+                    <label for="password">Enter A Password:</label>
+                    <input id="password" type="text" placeholder="EdlawitPassword" name="password">
+                </p>
+
+                <button>Submit Button</button>
+                
+            </form>
+    </section>
 
 
-            </p>
-            <!-- This is the password label and textbox with attributes of a placeholder an ID and name. -->
-            <p>
-                <label for="password">Enter A Password:</label>
-                <input id="password" type="text" placeholder="EdlawitPassword" name="password">
+    <section>
+        <h1>Query Strings</h1>
+            <form action="https://www.reddit.com/search/">
+               
+                <input type="text" name="q">
+                <button>Search Reddit</button>
 
-            </p>
+            </form>
+
+            <form action="https://www.youtube.com/results?search_query=">
+
+                <input type="text" name="q">
+                <button>YouTube Search</button>
+
+            </form>
+            <form action="https://www.google.com/search">
+
+                <input type="text" name="q">
+                <button>Google Search</button>
+
+            </form>
+
+    </section>
 
 
-
-
-<button>Submit Button</button>
-
-
-            
-        </form>
-
-
-        <section>
-
-<h1>Query Strings</h1>
-<form action="https://www.reddit.com/search/"></form>
-<input type="text" name = "q">
-<button>Search Reddit</button>
-
-
-        </section>
 
 </body>
 </html>
