@@ -60,10 +60,14 @@
 <!-- The section element represents a generic section of a document or application.  -->
 <section>
     <h1>CheckBox and Radio Buttons</h1>
+    <!-- The form element represents a collection of form-associated elements -->
+    <!-- Action represents the URI of a program that processes the form information. -->
         <form action="/birds">
+<!-- The label element represents a caption in a user interface. -->
+<!-- The input element represents a typed data field, usually with a form control to allow the user to edit the data. -->
            <input type="checkbox" name="agree_tos" id="agree"> 
            <label for="agree">I agree to Everything</label>
-
+<!-- The p element represents a paragraph. -->
            <p>
                <label for="s">Small</label>
                 <input type="radio" name="size" id="s" value="s">
@@ -71,12 +75,20 @@
                <label for="m">Medium</label>
                <input type="radio" name="size" id="m" value="m">
 
-
                <label for="l">Large</label>
                <input type="radio" name="size" id="l" value="l">
 
 
            </p>
+           <p>
+               <label for="Colors">What is your favourite color</label>
+               <select name="Colors" id="Colors">
+                   <option value="Red">Red </option>
+                   <option value="Blue">Blue </option>
+                   <option value="Green">Green</option>
+               </select>
+           </p>
+           <button> Edlawit</button>
         </form>
 </section>
 
