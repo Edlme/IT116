@@ -1,0 +1,22 @@
+h1 {
+    color: darkblue;
+    text-align:center;
+    font-weight:400;
+    font-size:125px;
+    font-family:'Courier New', Courier, monospace
+}
+h2{
+    color: darkblue;
+    text-align: center;
+    font-weight: 400;
+    font-family:pink underline;
+}
+h3{
+    text-decoration: orange underline;
+    
+}
+
+p{
+    Line-hight:1.5;
+    letter-spacing:0.3ex;
+}
