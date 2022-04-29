@@ -7,47 +7,57 @@
     <title>Forms</title>
 </head>
 
-
+<!-- The body element represents the content of the document. -->
 <body>
 <!-- The section element represents a generic section of a document or application. -->
     <section>
 <!-- h1 element represents this section's heading -->
         <h1>UserName And Password Inputs</h1>
-                <!-- The form element represents a collection of form-associated elements. -->
+<!-- This form is collects username and password and sends to "Edlawit".The form element represents a collection of form-associated elements. -->
+<!-- The action attribute that we have in the form element specifies where to send the form-data when a form is submitted. -->
             <form action="/Edlawit">
                 <!-- This is the label and textbox for the username. Username has attributes and IDs -->
                 <p>
 <!-- The label element represents a caption in a user interface. -->
+<!-- The for attribute associates the label with a control element. -->
                     <label for="username">Enter A Name:</label>
+<!-- The input element represents a typed data field. -->
+<!-- The id attribute defines a unique identifier-->
+<!-- The type attribute defines which type of input control to display. -->
+<!-- The placeholder attribute specifies a short hint that describes the expected value of an input field -->
+<!-- This name attribute is used to reference the element in a JavaScript -->
                     <input id="username" type="text" placeholder="Edlawit" name="username">
                 </p>
-                <!-- This is the password label and textbox with attributes of a placeholder an ID and name. -->
+<!-- This is the password label and textbox with attributes of a placeholder an ID and name. -->
                 <p>
                     <label for="password">Enter A Password:</label>
                     <input id="password" type="text" placeholder="EdlawitPassword" name="password">
                 </p>
-
+<!-- The button element represents a button labeled by its contents. -->
                 <button>Submit Button</button>
                 
             </form>
     </section>
 
-
+<hr>
+<!-- This section element represents a generic section of a document or application that has a heading query strings. -->
     <section>
         <h1>Query Strings</h1>
+<!-- This form submits the input that the user inserts to the reddit server for processing. -->
             <form action="https://www.reddit.com/search/">
                
                 <input type="text" name="q">
                 <button>Search Reddit</button>
 
             </form>
-
+<!-- This form submits the input that the user inserts to the youtube server for processing. -->
             <form action="https://www.youtube.com/results?search_query=">
 
                 <input type="text" name="q">
                 <button>YouTube Search</button>
 
             </form>
+<!-- This form submits the input that the user inserts to the google server for processing. -->
             <form action="https://www.google.com/search">
 
                 <input type="text" name="q">
@@ -58,7 +68,10 @@
     </section>
 <hr>
 <!-- The section element represents a generic section of a document or application.  -->
+<!-- in this section we have checkbox for showing an agreement; radio buttons for selecting size(small, medium, and large); select options 
+for colors; and a scroll bar-->
 <section>
+<!--  The h1 element represents a section heading. -->
     <h1>CheckBox and Radio Buttons</h1>
     <!-- The form element represents a collection of form-associated elements -->
     <!-- Action represents the URI of a program that processes the form information. -->
@@ -67,7 +80,7 @@
 <!-- The input element represents a typed data field, usually with a form control to allow the user to edit the data. -->
            <input type="checkbox" name="agree_tos" id="agree"> 
            <label for="agree">I agree to Everything</label>
-<!-- The p element represents a paragraph. -->
+<!-- The radio button is used to select an option from a given choices. -->
            <p>
                <label for="s">Small</label>
                 <input type="radio" name="size" id="s" value="s">
@@ -77,9 +90,9 @@
 
                <label for="l">Large</label>
                <input type="radio" name="size" id="l" value="l">
-
-
            </p>
+<!--  The select element is used to create a drop-down list.  -->
+<!-- The option element is used to define the items in the select element-->
            <p>
                <label for="Colors">What is your favourite color</label>
                <select name="Colors" id="Colors">
@@ -88,12 +101,12 @@
                    <option value="Green">Green</option>
                </select>
            </p>
-           <!--  -->
+<!-- This pargraph creates a scroll bar with minimum value of 5 and maximum value of 10. -->
            <p>
                <label for="sbar"> Edlawit's ScrollBar</label>
                <input type="range" id=" sbar" min="5" max=" 10" name=" scrollbar">
            </p>
-
+<!-- This parapraph will create a text area for users to type in -->
            <p>
            <label for="requests">Type in Special Requests </label>
            <textarea name="Text Area" id="requests" cols="15" rows="15">Type Here!</textarea>          
@@ -103,22 +116,23 @@
         </form>
 </section>
 <hr>
-<!--  -->
+<!--This section of the web page consists a form to collect input from textbox, password, and email.   -->
 <section>
     <form action="/bananas">
 
-        <!--  -->
+        <!--The following input is displayed being labelled as Textbox.  -->
         <label for="monte">TextBox</label>
         <input type="text" name="textBox" id="monte" required>
 
-        <!--  -->
+        <!-- This paragraph will allow users to insert password within a length range of 5 to 10  -->
         <p>
         <label for="password">Password</label>
         <input type="text" name="pword" id="password" minlength="5" maxlength="10">
         </p>
-        <!--This part of the code is creating an email placement box that requires the submission of exact email format  -->
+        <!--The following code creates an email placement box that requires the submission of exact email format  -->
         <p>
-            <input type="email" required>
+            <label for="emails"> Email</label>
+            <input type="email" id= "emails"required>
         </p>
 
         <button type="submit">Validation Button</button>
