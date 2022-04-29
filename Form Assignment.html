@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+</head>
+<body>
+<!--This section of my form consists of a form. The section element represents a generic section of a document or application.  -->
+    <section> 
+<!-- The h1 element represents a section heading. -->
+        <h1> Please fill out the form below </h1>
+<!-- This form element represents a collection of form-associated elements that can be submitted to a server for processing.  -->
+<!-- The action attribute that we have in the form element specifies where to send the form-data when this form is submitted. --> 
+            <form action="/myrestaurant">
+<!-- This paragraph element consists of first name text boxes that is labelled. -->
+                <p>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First Name" >
+                </p>
+<!-- This paragraph element consists of last name text boxes that is labelled. -->
+                <p>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                </p>  
+ <!--This paragraph consists of a select element that is used to create a drop-down list.  -->
+<!-- The option elements define the items in the select element-->
+                <p>
+                    <label for="food">Which food would you like to eat?</label>
+                    <select name="food" id="food">
+                        <option value="Doro wat with Injera">Ethiopian Doro wat with Injera</option>
+                        <option value="kitfo with kocho">Ethiopian kitfo with kocho</option>
+                        <option value="yetsom beyaynetu">Ethiopian yetsom beyaynetu(Vegan)</option>
+                    </select>                    
+                </p>
+<!--This parapraph will create a text area for users to type in their allergies -->
+                <p>
+                    <label for="allergies">Do you have any allergies?</label>
+                    <textarea name="allergiestext" id="allergies" cols="6" rows="5"  placeholder="Hey Monte!"></textarea>
+                </p>  
+  <!--The button element represents a button labeled as "send". --> 
+                <p>
+                    <Button>Send</Button>
+                </p>           
+    </section>
+    
+
+
+
+
+
+        </form>
+
+    
+</body>
+</html>
