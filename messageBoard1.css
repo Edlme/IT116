@@ -1,0 +1,39 @@
+/* "*" This is a universal selector that will select everything in our HTML page */
+/* 
+*{
+
+color: pink;
+background-color: green;
+
+}
+ */
+ /*  */
+ body{
+     background-color: rgb(34, 177, 182);
+ }
+ /* This will increase the size of the button to 30px */
+ button{
+        font-size: 30px;
+
+ }
+ /* multiple selectors will help us work on multiple elements at a time */
+ h1, h2 {
+     color: red;
+ }
+ /* We use # for an ID  */
+ #signup{
+        backgrouond-color: black;
+        color:yellow;
+ }
+ /* We use "." for a class */
+ .tag{
+     color: purple; 
+ }
+ /* Desendent selectors: every other element under the parent class */
+ .post a{
+        color: purple;
+ }
+ /*  */
+ footer> a {
+        color: orange;
+ }
