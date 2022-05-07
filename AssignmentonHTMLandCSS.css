@@ -1,0 +1,31 @@
+/* This class selector selects all the elements with the class attribute "key" and changes their colors to Crimson.*/
+/* The "." indicates that this is a class selector */
+.key{
+    color:Crimson;
+}
+/*This class selector selects all the elements with the class attribute "old" and changes their colors to green. */
+.old{
+    color:green;
+}
+/*This class selector selects all the elements with the class attribute "maize" and changes their colors to maize.  */
+.maize{
+    color:#FBEC5D;
+}
+/* This class selector selects all the elements with the class attribute "go" and changes their colors to red. */
+.go {
+    color: red;
+}
+/* This class selector selects all the elements with the class attribute "texas" and changes their colors to burnt orange. */
+.texas{
+    color: #CC5500;
+}
+/* This id selector selects the element with the id attribute "yes" and changes its color to white while changing the backgrouond color to green. */
+#yes{
+    color: white;
+    background-color: green;
+}
+/* This id selector selects the element with the id attribute "no" and changes its color to white while changing the background color to red. */
+#no{
+    color: white;
+    background-color: red;
+}
