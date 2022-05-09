@@ -7,51 +7,58 @@ background-color: green;
 
 }
  */
- /*  */
+ /*This element selector changes the color of the background of the contents of the body element to the indicated color.  */
  body{
      background-color: rgb(34, 177, 182);
  }
  /* This will increase the size of the button to 30px */
  button{
         font-size: 30px;
-
  }
- /* multiple selectors will help us work on multiple elements at a time */
+ /* This multiple selectors will help us work on multiple elements at a time */
  h1, h2 {
      color: red;
  }
- /* We use # for an ID  */
+ /* We use # for an ID selector. This will select the specific element with this id and changes its color and background color to yellow and black colors. */
  #signup{
-        backgrouond-color: black;
+        background-color: black;
         color:yellow;
  }
- /* We use "." for a class */
+ /* We use "." for a class selector. This will change the color of all the elements that has this class attribute. */
  .tag{
-     color: purple; 
+     color: rgb(128, 0, 111); 
  }
- /* Desendent selectors: every other element under the parent class */
+ /* This is a desendent selectors. Hence, all the anchor elements under the post class
+ will have a purple color.*/
  .post a{
         color: purple;
  }
- /*  */
+ /* This element> element selector select and style every anchor element where the parent is a footer element: */
  footer> a {
         color: orange;
  }
- /*  */
+ /* This is an [attribute*="value"] selector that select all the anchor elements whose href attribute value contains the value "google".
+ and changes its color.*/
+ /* This selector will go through all the href attributes to see anything that has google in it. */
  a[herf*="google"]{
-        color:blanchedalmond;
+        color:rgb(97, 25, 7);
  }
+ /*A pseudo-class is used to define a special state of an element. 
+ In this case, the background color and the color of the button element will be changed when the user's pointer hovers over the button.    */
 button:hover{
-      background-color: rgb(0, 182, 55);
+      background-color: rgb(182, 170, 0);
        color: rgb(216, 25, 25)}
-/* nested psudoclass */
+/* This is a nested psudoclass. When the button is clicked (this is what the keyword active implies), the background color changes to green. */
 .post button:active{
        background-color: green;
 }
-h2:: ::first-letter{
+/*This is a CSS pseudo-element which is used to style specified parts of an element. 
+In this case, all the first letters of the h2 elements will have a font-size of 50px. */
+h2::first-letter{
        font-size:50px;
 }
-/*  */
+/*This is a CSS pseudo-element.
+This will change the color of the first line of the paragraph to green.  */
 p::first-line{
        color:green;
 }
