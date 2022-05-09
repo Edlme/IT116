@@ -1,0 +1,11 @@
+/* This is a descendent selector that selects all the anchor tags elements that are in the header element. 
+This selector changes the font-size and color of the anchor element in the header.*/
+header a {
+    font-size: 30px;
+    color: rgb(245, 82, 177);
+}
+/* This is a descendent selector.
+It changes the color of the anchor element in the element that has the id "schools". */
+#schools a {
+    color:rgb(235, 180, 0);
+}
