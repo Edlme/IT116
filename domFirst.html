@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test"> We're Gonna Change This Heading</h1>
+
+    <script>
+        // It will look for the element by its ID in the DOM and will change the h1 element to Hello World
+        document.getElementById('test').innerHTML="Hello World";
+        //Declaring a variable
+        // This is going to ask us for our name and will wirte the input to the actual screen as we used doument.write(name)
+        // In this case, the prompt function ask for our name
+        let name= prompt("What is your name?");
+        //printing the value of the variable
+        // document.write is used to wirte the content on the screen
+        // We passed the variable into the argument parameter
+        document.write(name);
+        // We use console.log to see outputs, for debugging purpose and to send secret mesages for ourselves
+        // As we passed the variable name to console.log, we should also see the actual output from the screen/ window on the console window everytime this particular element loads
+        console.log(name);
+        // The alert function is used to create an output message on the screen for the end users
+        // We passed the object that we created to the functions below
+        alert(name)
+
+    </script>
+</body>
+</html>
