@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Importing the bootstrap library in the header -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <!-- In the header, we used Bootsrap classes of to make the background color green with white text and . We also created an id for the header to help us refernce the element. -->
+    <!-- In the header, we called a class from the Bootsrap library
+        In bootstrap, the class big-success makes the color of the background green; the class text-white will make the text. 
+        We called the p-4 class liberary of paragraph.
+        We also created an id for the header to help us reference the element in the JavaScript file. -->
     <header id="main-header" class="bg-success text-white p-4">
         <div>
-            <!-- we created an id for the h1 element -->
+            <!-- Creating a title with h1 inside of the div element.
+                we created an id for the h1 element -->
             <h1 id="header-title"> Item Lister</h1>
         </div>   
     </header>
-
+    <!-- Calling the container class from bootstrap library -->
     <div class="container">
-        <!-- In this container, we created a card -->
+        <!-- In this container, we called card classes to create a card, the line. And, we also called card-body to pad the section within the card.-->
         <div id="main" class="card card-body">
+            <!-- Creating a header and Calling the class of title from the bootstrap library -->
+            <!-- Hence, we created a card in which there is the title "Add Items" -->
             <h2 class="title">Add Items</h2>
-<!-- a form is created with a text input and a submit button -->
+<!-- Creating a form with a text input and a submit button. We have called different classes from the bootstrap library -->
             <form action="">
                 <input type="text" class="form-control">
                 <input type="submit" class="btn btn-dark" value="submit">
@@ -29,8 +36,9 @@
             <hr>
             <!-- we will call the class title from bootstrap -->
             <h2 class="title">Items</h2>
-            <!-- We created an unordered list of items. we also called classes from bootstrap. -->
+            <!-- We created an unordered list of items. we also gave an id and called a class from bootstrap. -->
                 <ul id="items" class="list-group">
+            <!-- listing the items in addition to calling list-group-item class from bootstrap -->
                     <li class="list-group-item">Item 1</li>
                     <li class="list-group-item">Item 2</li>
                     <li class="list-group-item">Item 3</li>
@@ -44,7 +52,7 @@
 
 
     </div>
-  <!--The script element allows us to link the JavaScript document with this HTML -->
+  <!--The script element allows us to link the JavaScript file with this HTML so that the JS file can access the DOM-->
 <script src="domWalkthrough.js"></script>
 </body>
 </html>
